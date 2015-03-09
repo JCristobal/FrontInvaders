@@ -12,8 +12,41 @@ GAME.Input = function(){
 			case GAME.Config.input.CHANGE:
 			    return false;
 		}
-	};
+	};	
 };
+
+
+GAME.dispara = function(){
+/*
+	document.onkeypress = function(e){
+	    switch (e.keyCode) {
+			case GAME.Config.input.UP:
+			case GAME.Config.input.LEFT:
+			case GAME.Config.input.RIGHT:
+			case GAME.Config.input.SHOOT:
+			case GAME.Config.input.PAUSE:
+			case GAME.Config.input.START:
+			case GAME.Config.input.CHANGE:
+			    return false;
+		}
+	};	
+*/
+
+	GAME.$id('shoot_button').onclick = function() {
+
+					this.pressed.shoot = true;		// no funciona
+
+	};
+
+	GAME.$id('shoot_button').onclick = function() { console.log("dispara"); }; //  escribimos en consola para comprobar que funciona
+	
+	
+};
+
+
+
+
+
 GAME.Input.prototype = {
 	held: {},
 	pressed: {},
@@ -105,4 +138,5 @@ GAME.Input.prototype = {
 		}
 		this.pressed = {};
 	}
+
 };

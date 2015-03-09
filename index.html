@@ -6,11 +6,17 @@
 	<meta name="author" content="end3r" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
 	<script src="./js/lib/mibbu.js"></script>
 	<script src="./js/game.js"></script>
 	<script src="./js/config.js"></script>
 	<script src="./js/input.js"></script>
 	<script src="./js/utils.js"></script>
+
+
 </head>
 <body>
 <div id="container">
@@ -20,6 +26,7 @@
 		<div id="statbar-left"><p>Score<span id="points">0</span></p></div>
 		<div id="statbar-center"><p>Level<span id="level">1</span></p></div>
 		<div id="statbar-right"><p>Lives</p><ul id="lives"><li>|</li><li>|</li><li>|</li></ul></div>
+		<p id="centrado"> <a href="javascript:location.reload()">Back</a> </p>
 	</div>
 	<div id="menu">
 		<img src="./img/frontinvaders.jpg" alt="Front Invaders" />
@@ -63,6 +70,8 @@
 		<h3>Credits</h3>
 		<p><a href="http://michalbe.blogspot.com/">Michał Budzyński</a> - author of the Mibbu microframework</p>
 		<p><a href="http://frontrowconf.com/">Front Row Conf</a> - website graphics used in the game</p>
+		<h3>Contributor</h3>
+		<p><a href="https://github.com/JCristobal">J. Cristóbal López Zafra</a> I collaborate adding reload page and buttons. With them will be playable on mobile</p>
 		<span><span>&lsaquo;</span>Back to menu</span>
 	</div>
 	<div id="message"></div>
@@ -71,6 +80,17 @@
 		var Mibbu = new mibbu(GAME_WIDTH, GAME_HEIGHT, 'game');
 		GAME.Init();
 	</script>
+	<section id="buttons">
+		<button type="button" name="button_shoot" value="shoot" class="button0" id="shoot_button" onClick="GAME.dispara()">Shoot</button>
+		<button type="button" name="button_right" value="arrow-right" class="button1" id="arrow-right" ><i class="fa fa-arrow-right"></i> </button>
+		<button type="button" name="button_left" value="arrow-left" class="button1" id="arrow-left"><i class="fa fa-arrow-left" ></i> </button>	
+	</section>
+
+
 </div>
+
+
+
+
 </body>
 </html>

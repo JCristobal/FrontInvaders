@@ -50,7 +50,7 @@ ul { list-style-type: none; }
 #howTo p.controls span { display: block; }
 #howTo p.controls strong { font-size: 14px; }
 
-#about { background: #f5f5f5; color: #666; text-align: center; text-shadow: 1px 1px 1px #fff; z-index: 8; line-height: 17px; }
+#about { background: #f5f5f5; color: #666; text-align: center; text-shadow: 1px 1px 1px #fff; z-index: 8; line-height: 15px; }
 #about p { margin-top: 0px; }
 #about p a { color: #ac4b38; text-decoration: none; }
 #about p a:hover { text-decoration: underline; }
@@ -74,3 +74,60 @@ ul { list-style-type: none; }
 #message .box p { line-height: 20px; font-size: 12px; padding: 0 40px; color: #585656; }
 #message .box p a { color: #ac4b38; text-decoration: none; }
 #message .box p a:hover { text-decoration: underline; }
+
+
+#centrado {   text-align: center; margin-bottom: 2%; }
+
+#centrado a {text-decoration: none; color: #980000 ; }
+
+#buttons {  }
+
+
+button.button0 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	padding: 11px 18px;
+	background: -moz-linear-gradient(
+		top,
+		#fcc352 0%,
+		#fa9931);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#fcc352),
+		to(#fa9931));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 0px solid #134201;
+
+}
+
+button.button1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #0d0b0d;
+	padding: 7px 30px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ffffff 36%,
+		#d9d9d9 71%,
+		#ebebeb 97%,
+		#ffffff);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.36, #ffffff),
+		color-stop(0.71, #d9d9d9),
+		color-stop(0.97, #ebebeb),
+		to(#ffffff));
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #cccccc;
+
+	float: right;
+}
+
+
