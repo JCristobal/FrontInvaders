@@ -33,9 +33,7 @@ GAME.dispara = function(){
 */
 
 	GAME.$id('shoot_button').onclick = function() {
-
-					this.pressed.shoot = true;		// no funciona
-
+		this.pressed.shoot = true;		                  // no funciona
 	};
 
 	GAME.$id('shoot_button').onclick = function() { console.log("dispara"); }; //  escribimos en consola para comprobar que funciona
@@ -43,6 +41,17 @@ GAME.dispara = function(){
 	
 };
 
+GAME.derecha = function(){
+
+	GAME.$id('arrow-right').onclick = function() { console.log("derecha"); }; //  escribimos en consola para comprobar que funciona
+		
+};
+
+GAME.izquierda = function(){
+
+	GAME.$id('arrow-left').onclick = function() { console.log("izquierda"); }; //  escribimos en consola para comprobar que funciona
+		
+};
 
 
 
