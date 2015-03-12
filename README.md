@@ -17,5 +17,8 @@ Also you can use the new buttons, in the below the game.
 **Michał Budzyński** - author of the Mibbu microframework,
 **Front Row Conf** - website graphics used in the game
 
-### JCristobal ###
+### Contributor###
  **J. Cristóbal López Zafra** - collaborate adding reload page and buttons. With them will be playable on mobile  [ADAPTATIVE DESING IT´S STILL PENDING]
+
+
+ You can play it [here](http://jcristobal.github.io/FrontInvaders/)
