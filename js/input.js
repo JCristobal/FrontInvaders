@@ -16,45 +16,6 @@ GAME.Input = function(){
 };
 
 
-GAME.dispara = function(){
-/*
-	document.onkeypress = function(e){
-	    switch (e.keyCode) {
-			case GAME.Config.input.UP:
-			case GAME.Config.input.LEFT:
-			case GAME.Config.input.RIGHT:
-			case GAME.Config.input.SHOOT:
-			case GAME.Config.input.PAUSE:
-			case GAME.Config.input.START:
-			case GAME.Config.input.CHANGE:
-			    return false;
-		}
-	};	
-*/
-
-	GAME.$id('shoot_button').onclick = function() {
-		this.pressed.shoot = true;		                  // no funciona
-	};
-
-	GAME.$id('shoot_button').onclick = function() { console.log("dispara"); }; //  escribimos en consola para comprobar que funciona
-	
-	
-};
-
-GAME.derecha = function(){
-
-	GAME.$id('arrow-right').onclick = function() { console.log("derecha"); }; //  escribimos en consola para comprobar que funciona
-		
-};
-
-GAME.izquierda = function(){
-
-	GAME.$id('arrow-left').onclick = function() { console.log("izquierda"); }; //  escribimos en consola para comprobar que funciona
-		
-};
-
-
-
 
 GAME.Input.prototype = {
 	held: {},
@@ -146,6 +107,32 @@ GAME.Input.prototype = {
 			}
 		}
 		this.pressed = {};
+
+		GAME.$id('shoot_button').onclick = function() {
+		    //console.log("dispara");
+		    if(GAME.BULLETS.length < GAME.Config.bulletLimit) {
+		        GAME.BULLETS[GAME.BULLETS.length] = GAME.Utils.ActivateBullet();
+		    }
+		};
+
+		GAME.$id('arrow-right').onclick = function() {
+		    //console.log("derecha");
+			GAME.player.position(GAME.player.position().x += GAME.Config.moveInterval, GAME.player.position().y);
+			if(GAME.player.position().x > GAME.background.width-GAME.player.width-1) {
+				GAME.player.position(GAME.background.width-GAME.player.width-1, GAME.player.position().y);
+			}
+		};
+
+		GAME.$id('arrow-left').onclick = function() {
+			//console.log("izquierda");
+			GAME.player.position(GAME.player.position().x -= GAME.Config.moveInterval, GAME.player.position().y);
+			if(GAME.player.position().x <= 0) {
+				GAME.player.position(1, GAME.player.position().y);
+			}
+
+		};	
+
+
 	}
 
 };
