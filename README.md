@@ -7,6 +7,7 @@ Take control over the HTML5 Rocket, and kill as many evil alien Explorers as You
 
 ### Controls ###
 Use left and right arrow keys to move Your Rocket, press up arrow or Z key to fire Your weapon, hit spacebar to pause the game.
+Also you can use the new buttons, in the below the game.
 
 ### Authors ###
 **Andrzej Mazur** - coding,
@@ -15,3 +16,6 @@ Use left and right arrow keys to move Your Rocket, press up arrow or Z key to fi
 ### Credits ###
 **Michał Budzyński** - author of the Mibbu microframework,
 **Front Row Conf** - website graphics used in the game
+
+### JCristobal ###
+ **J. Cristóbal López Zafra** - collaborate adding reload page and buttons. With them will be playable on mobile  [ADAPTATIVE DESING IT´S STILL PENDING]
