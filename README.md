@@ -15,3 +15,9 @@ Use left and right arrow keys to move Your Rocket, press up arrow or Z key to fi
 ### Credits ###
 **Michał Budzyński** - author of the Mibbu microframework,
 **Front Row Conf** - website graphics used in the game
+
+### Contributor###
+ **J. Cristóbal López Zafra** - collaborate adding reload page and buttons. With them will be playable on mobile  [ADAPTATIVE DESING IT´S STILL PENDING]
+
+
+ You can play it [here](http://jcristobal.github.io/FrontInvaders/)
