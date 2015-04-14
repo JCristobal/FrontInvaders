@@ -17,7 +17,6 @@ Use left and right arrow keys to move Your Rocket, press up arrow or Z key to fi
 **Front Row Conf** - website graphics used in the game
 
 ### Contributor###
- **J. Cristóbal López Zafra** - collaborate adding reload page and buttons. With them will be playable on mobile  [ADAPTATIVE DESING IT´S STILL PENDING]
-
+ **J. Cristóbal López Zafra** - collaborate adding reload page and buttons. With them will be playable on mobile: you can see it in [FrontInvaders-Android repository](https://github.com/JCristobal/FrontInvaders-Android)
 
  You can play it [here](http://jcristobal.github.io/FrontInvaders/)
